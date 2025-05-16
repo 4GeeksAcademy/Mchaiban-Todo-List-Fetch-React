@@ -9,3 +9,40 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    margin-top: 100px;
+}
+
+ul li{
+    border: 1px solid grey;
+    list-style: none;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+}
+input{
+    border: none;
+    width: 100%;
+}
+ul{
+    padding: 0;
+}
+.todo-item {
+    position: relative;       
+    padding-right: 10px;     
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 50%;
+    right: 0.5em;
+    transform: translateY(-50%);
+    opacity: 0;               
+    cursor: pointer;
+    transition: opacity 0.2s; 
+  }
+  
+  .todo-item:hover .delete-icon {
+    opacity: 1;               
+  }
